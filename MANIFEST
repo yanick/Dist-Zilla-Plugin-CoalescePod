@@ -1,0 +1,14 @@
+Build.PL
+Changes
+INSTALL
+LICENSE
+MANIFEST
+MANIFEST.SKIP
+META.json
+META.yml
+README
+README.mkdn
+SIGNATURE
+dist.ini
+lib/Dist/Zilla/Plugin/MergePod.pm
+t/000-report-versions.t
