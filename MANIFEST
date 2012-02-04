@@ -10,5 +10,5 @@ README
 README.mkdn
 SIGNATURE
 dist.ini
-lib/Dist/Zilla/Plugin/MergePod.pm
+lib/Dist/Zilla/Plugin/CoalescePod.pm
 t/000-report-versions.t
