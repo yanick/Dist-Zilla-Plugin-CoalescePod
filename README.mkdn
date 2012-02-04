@@ -1,0 +1,28 @@
+# NAME
+
+Dist::Zilla::Plugin::CoalescePod - merge .pod files into their .pm counterparts
+
+# VERSION
+
+version 0.1.0
+
+# SYNOPSIS
+
+    # in dist.ini
+    [CoalescePod]
+
+# DESCRIPTION
+
+If the files _Foo.pm_ and _Foo.pod_ both exist, the content of the pod file is
+appended at the end of the `.pm`, and the pod file is removed.
+
+# AUTHOR
+
+Yanick Champoux <yanick@babyl.dyndns.org>
+
+# COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2012 by Yanick Champoux.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.

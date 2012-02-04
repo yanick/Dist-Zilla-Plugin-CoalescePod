@@ -1,0 +1,36 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.68.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 1126fc36ff62359d88383a2f41e16ef8899d3abe Build.PL
+SHA1 3dc93dec4e0c40464c65aa40d55e9157f5743b0d Changes
+SHA1 a9ac635baa0915de9aa6c45d32a687417d31f3e7 INSTALL
+SHA1 33260abc93b43a44581b0b6263d7e4318f4122bb LICENSE
+SHA1 c37408a7a70d7b516093c69be89233c6f8f08b4c MANIFEST
+SHA1 5748353dcf3505fb61a257febb1ca5a61a85bfe8 MANIFEST.SKIP
+SHA1 426d132b68fd3c1546a0c30a0024c97dd77dc68c META.json
+SHA1 13b80fa11d3dde80fba3e98d4b62f09cd11eadf1 META.yml
+SHA1 827b7ecc211e66ae63b8a2648194ff852a8b2950 README
+SHA1 58a0f214592a3beb8945013a61d8627580200769 README.mkdn
+SHA1 9c92f45aed0a594e22326daf6d9877ced9130255 dist.ini
+SHA1 3213bab20a3e6f5bf2941995e69d9c10ac3c5504 lib/Dist/Zilla/Plugin/CoalescePod.pm
+SHA1 473906254ecd96009795d4b7fbc82fac48c03ecd t/000-report-versions.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.11 (GNU/Linux)
+
+iEYEARECAAYFAk8tc+4ACgkQ34Hwf+GwC4ymXQCggACowqHL+Rbvg6AkH5CzAabz
+dWIAoJPZ4nYRU3yXTGzvhazwLfjLFuqH
+=/xHK
+-----END PGP SIGNATURE-----
