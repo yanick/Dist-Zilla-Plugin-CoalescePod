@@ -1,4 +1,6 @@
+AUTHOR_PLEDGE
 Build.PL
+CONTRIBUTORS
 Changes
 INSTALL
 LICENSE
@@ -11,4 +13,10 @@ README.mkdn
 SIGNATURE
 dist.ini
 lib/Dist/Zilla/Plugin/CoalescePod.pm
-t/000-report-versions.t
+t/00-compile.t
+t/000-report-versions-tiny.t
+t/basic.t
+t/corpus/dist.ini
+t/corpus/lib/Data.pm
+t/corpus/lib/Foo.pm
+xt/release/unused-vars.t
