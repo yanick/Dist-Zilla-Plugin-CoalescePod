@@ -18,5 +18,7 @@ t/000-report-versions-tiny.t
 t/basic.t
 t/corpus/dist.ini
 t/corpus/lib/Data.pm
+t/corpus/lib/Data.pod
 t/corpus/lib/Foo.pm
+t/corpus/lib/Foo.pod
 xt/release/unused-vars.t

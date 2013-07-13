@@ -1,3 +1,5 @@
+#PODNAME: Foo
+
 =head1 SYNOPSIS
 
     # in dist.ini

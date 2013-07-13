@@ -7,6 +7,7 @@ Revision history for Dist-Zilla-Plugin-MergePod
 
  [ENHANCEMENTS]
  - Now works with files with __DATA__ section. [RT#86844, Michael Jemmeson]
+ - don't try to coalesce pod under anything but /lib.
 
 0.1.0 2012-02-04
  - Initial release
