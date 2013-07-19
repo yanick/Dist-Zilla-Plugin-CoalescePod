@@ -1,0 +1,38 @@
+---
+abstract: 'merge .pod files into their .pm counterparts'
+author:
+  - 'Yanick Champoux <yanick@babyl.dyndns.org>'
+build_requires:
+  File::Find: 0
+  File::Temp: 0
+  Module::Build: 0.3601
+  Test::DZil: 0
+  Test::More: 0.88
+configure_requires:
+  Module::Build: 0.3601
+dynamic_config: 0
+generated_by: 'Dist::Zilla version 4.300030, CPAN::Meta::Converter version 2.120921'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Dist-Zilla-Plugin-CoalescePod
+provides:
+  Dist::Zilla::Plugin::CoalescePod:
+    file: lib/Dist/Zilla/Plugin/CoalescePod.pm
+    version: v0.2.1
+requires:
+  Dist::Zilla::Role::FileMunger: 0
+  Moose: 0
+  strict: 0
+  warnings: 0
+resources:
+  bugtracker: http://rt.cpan.org/Public/Dist/Display.html?Name=Dist-Zilla-Plugin-CoalescePod
+  homepage: http://search.cpan.org/dist/Dist-Zilla-Plugin-CoalescePod/
+  repository: https://github.com/yanick/Dist-Zilla-Plugin-CoalescePod.git
+version: 0.2.1
+x_author_pledge:
+  version: 1
+x_authority: cpan:YANICK
+x_contributors:
+  - 'Michael Jemmeson <michael.jemmeson@(none)>'

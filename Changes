@@ -1,18 +1,11 @@
 Revision history for Dist-Zilla-Plugin-MergePod
 
-{{$NEXT}}
- [API CHANGES]
-
+0.2.1 2013-07-18
  [BUG FIXES]
  - log message gives filename, not object ref.
 
- [DOCUMENTATION]
-
- [ENHANCEMENTS]
-
- [NEW FEATURES]
-
  [STATISTICS]
+ - code churn: 2 files changed, 14 insertions(+), 1 deletion(-)
 
 0.2.0 2013-07-13
  [ENHANCEMENTS]
