@@ -19,7 +19,7 @@ sub munge_file {
     my ( $podfile ) = grep { $_->name eq $podname } 
                            @{ $self->zilla->files } or return;
 
-   $self->log( "merged $podfile into " . $file->name );
+   $self->log( "merged " . $podfile->name . " into " . $file->name );
 
     my @content = split /(^__DATA__$)/m, $file->content;
 
