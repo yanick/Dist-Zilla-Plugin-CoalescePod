@@ -1,19 +1,12 @@
 Revision history for Dist-Zilla-Plugin-MergePod
 
-{{$NEXT}}
- [API CHANGES]
-
- [BUG FIXES]
-
+0.2.2 2014-10-12
  [DOCUMENTATION]
  - Mention that the pod is added before the __DATA__ marker if present.
    (RT#99440, raised by Thomas Sibley)
 
- [ENHANCEMENTS]
-
- [NEW FEATURES]
-
  [STATISTICS]
+ - code churn: 5 files changed, 16 insertions(+), 4 deletions(-)
 
 0.2.1 2013-07-18
  [BUG FIXES]
