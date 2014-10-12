@@ -7,6 +7,7 @@
 
 =head1 DESCRIPTION
 
-If the files I<Foo.pm> and I<Foo.pod> both exist, the content of the pod file is
-appended at the end of the C<.pm>, and the pod file is removed.
+If the files I<Foo.pm> and I<Foo.pod> both exist, the pod file is removed and
+its content appended to the end of the C<.pm> file (or just before a
+C<__DATA__> marker if present) 
 

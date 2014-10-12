@@ -6,6 +6,8 @@ Revision history for Dist-Zilla-Plugin-MergePod
  [BUG FIXES]
 
  [DOCUMENTATION]
+ - Mention that the pod is added before the __DATA__ marker if present.
+   (RT#99440, raised by Thomas Sibley)
 
  [ENHANCEMENTS]
 
