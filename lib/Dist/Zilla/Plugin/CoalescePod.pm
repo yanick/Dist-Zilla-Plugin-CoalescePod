@@ -50,6 +50,7 @@ sub prune_files {
    my @files = @{ $self->zilla->files };
    foreach my $file ( @files ) {
       next unless $file->name =~ m/\.pod$/;
+      next if $file->name =~ /t\/corpus/;
 
       push @{ $self->_pod_files }, $file;
       $self->zilla->prune_file($file);
