@@ -1,4 +1,4 @@
-Revision history for Dist-Zilla-Plugin-MergePod
+Revision history for Dist-Zilla-Plugin-CoalescePod
 
 {{$NEXT}}
  [API CHANGES]
@@ -8,6 +8,7 @@ Revision history for Dist-Zilla-Plugin-MergePod
  [DOCUMENTATION]
 
  [ENHANCEMENTS]
+ - Cache pod files in attribute. [#3](https://github.com/yanick/Dist-Zilla-Plugin-CoalescePod/pull/3), thanks to Hunter McMillen.
 
  [NEW FEATURES]
 
