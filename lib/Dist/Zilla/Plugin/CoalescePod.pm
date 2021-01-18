@@ -25,17 +25,21 @@ sub munge_file {
 
     ( my $podname = $file->name ) =~ s/\.pm$/.pod/;
 
-    my ( $podfile ) = grep { $_->name eq $podname } 
+    my ( $podfile ) = grep { $_->name eq $podname }
                            @{ $self->_pod_files } or return;
 
     $self->log( "merged " . $podfile->name . " into " . $file->name );
 
-    my @content = split /(^__DATA__$)/m, $file->content;
+    my @content = ( $file->content );
+
+    if( $content[0] =~ s/(^__DATA__.*)//ms ) {
+        push @content, $1;
+    }
 
     # inject the pod
     splice @content, 1, 0, $podfile->content;
 
-    $file->content( join '', @content );
+    $file->content( join "\n\n", @content );
 
     return;
 }
