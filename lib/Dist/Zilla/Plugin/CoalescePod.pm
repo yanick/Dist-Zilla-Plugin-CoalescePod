@@ -32,31 +32,31 @@ sub munge_file {
 
     my @content = ( $file->content );
 
-    if( $content[0] =~ s/(^__DATA__.*)//ms ) {
-        push @content, $1;
-    }
+    push @content, $1 if $content[0] =~ s/(^__DATA__.*)//ms;
 
     # inject the pod
     splice @content, 1, 0, $podfile->content;
 
     $file->content( join "\n\n", @content );
-
-    return;
 }
 
 sub prune_files {
    my ($self) = @_;
 
    my @files = @{ $self->zilla->files };
+
    foreach my $file ( @files ) {
       next unless $file->name =~ m/\.pod$/;
       next if $file->name =~ /t\/corpus/;
 
+      my $pm = $file->name =~ s/\.pod$/.pm/r;
+
+      # only deal with pod files with associated pm files
+      next unless grep { $_->name eq $pm } @files;
+
       push @{ $self->_pod_files }, $file;
       $self->zilla->prune_file($file);
    }
-
-   return;
 }
 
 1;
