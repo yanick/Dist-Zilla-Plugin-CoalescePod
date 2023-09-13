@@ -12,8 +12,9 @@ on 'test' => sub {
   requires "File::Spec" => "0";
   requires "IO::Handle" => "0";
   requires "IPC::Open3" => "0";
-  requires "Test::DZil" => "0";
   requires "Test2::V0" => "0";
+  requires "Test::DZil" => "0";
+  requires "Test::More" => "0";
   requires "perl" => "5.006";
 };
 
@@ -26,5 +27,6 @@ on 'configure' => sub {
 };
 
 on 'develop' => sub {
+  requires "Test::More" => "0.96";
   requires "Test::Vars" => "0";
 };
