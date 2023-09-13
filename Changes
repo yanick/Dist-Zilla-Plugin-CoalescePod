@@ -2,6 +2,8 @@ Revision history for Dist-Zilla-Plugin-CoalescePod
 
 {{$NEXT}}
  [API CHANGES]
+ - POD files without an associated .pm file are now left alone. 
+   [#5](https://github.com/yanick/Dist-Zilla-Plugin-CoalescePod/pull/5),
 
  [BUG FIXES]
 
