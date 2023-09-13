@@ -1,17 +1,8 @@
 Revision history for Dist-Zilla-Plugin-CoalescePod
 
-{{$NEXT}}
- [API CHANGES]
-
- [BUG FIXES]
-
- [DOCUMENTATION]
-
- [ENHANCEMENTS]
-
- [NEW FEATURES]
-
+0.3.1 2023-09-13
  [STATISTICS]
+ - code churn: 5 files changed, 112 insertions(+), 50 deletions(-)
 
 0.3.0 2021-01-18
  [ENHANCEMENTS]
